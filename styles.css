@@ -1,0 +1,249 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin:0;
+    display:grid;
+    grid-template-columns: min-content 1fr;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #f3f9ec;
+    
+    }
+header{
+    grid-column: 1 / 3;
+    background: #333;
+    padding: 4rem;
+    width: 100%;
+    text-align: center;
+}
+/* 
+ ============ NAVBAR ============
+*/
+
+
+
+
+nav {
+    white-space: nowrap;
+    background:transparent;
+    color: black;
+    margin-right: 0;
+    position: fixed;
+    right: 0;
+    margin-top: 23.5rem;
+    
+   }
+
+nav a{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a{
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #82acaa;
+    text-decoration: none;
+    writing-mode: vertical-rl;
+}
+
+a.current{
+    background: black;
+    color: blue;
+    
+}
+a:hover {
+  color: black;
+}
+
+
+/* 
+ ============ NAVBAR ============
+*/
+
+/* 
+ ============ INDEX ============
+*/
+
+
+main {
+    padding-bottom:40rem;
+    width: 1280px;
+    color: #82acaa;
+}
+
+section{
+    padding: 2rem;
+    margin: 0 0 2rem 0;
+}
+
+/* 
+ ============ INDEX ============
+*/
+/* 
+ ============ WORK ============
+*/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+/* 
+ ============ WORK ============
+*/
+
+
+/* 
+ ============ FOOTER ============
+*/
+
+footer {
+    grid-column: 1/3;
+    background: #607d8d;
+    padding: 3rem 1rem;
+    }
+
+footer p {
+    float: left;
+    color: #f2f2f2;
+    text-align: left;
+    padding: 1px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    
+}
+
+footer a {
+    float: right;
+    color: #f2f2f2;
+    text-align: right;
+    padding: 16px 18px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* 
+ ============ FOOTER ============
+*/
+
+::-webkit-scrollbar {
+    display: none;
+    }
+
+/* 
+============ MQueries ============
+*/
+
+@media (min-height: 300px) {
+    nav ul {
+      position: sticky;
+      top: 0;
+    }
+  }
+
+  @media (min-width: 1280px) {.main .nav {
+    display: block;
+    position: fixed;
+    top: 50%;
+    right: 8rem;
+    margin: 4.25rem 0 0;
+    -webkit-transform: rotate(90deg) translate3d(50%,0,0);
+    transform: rotate(90deg) translate3d(50%,0,0);
+    -webkit-transform-origin: 100% 0;
+    -ms-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    z-index: 2;
+}
+}
