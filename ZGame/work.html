@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zhaxoph.com</title>
+        <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+        <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+        <script type='text/javascript' language ='javascript' src="javascript.js">window.onscroll = function() {myFunction()};</script>
+    </head>
+    <header>
+            <div class="header">
+                    <img src="background.png" alt="Background" width="100%" height="auto">
+                  </div>
+    </header>
+    <navbar>
+            <div id="navbar" class="navbar">
+                    <a href='index.html' class="button-home">Home</a>
+                    <a class="button-work active">My work</a>
+                    <a href="about.html" class="button-about" >About me</a>
+                    
+            </div>
+    </navbar>
+<body>
+        
+        </div>
+        <div class="work">
+        <div class="panels">
+                <div class="panel panel1">
+                    <p>Librarte de Mí</p>
+                    <p>Cover</p>
+                </div>
+                <div class="panel panel2">
+                    <p>Te veo Lasso</p>
+                    <p>Cover</p>
+                    </div>
+                <div class="panel panel3">
+                    <p>L'Assasymphonie</p>
+                    <p>Cover</p>
+                </div>
+        </div>
+    </div>
+               
+<script>
+const panels = document.querySelectorAll('.panel');
+    function toggleOpen() {
+      console.log('Hello');
+      this.classList.toggle('open');
+    }
+    function toggleActive(e) {
+      console.log(e.propertyName);
+      if (e.propertyName.includes('flex')) {
+        this.classList.toggle('open-active');
+      }
+    }
+   
+    panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+    panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+
+
+
+</script>
+
+</body>
+<footer>
+    <div class="footer">
+        <p id="copyright">Zhaxoph© 2018</p> 
+        <a href="mailto:zloaded@gmail.com">Send me a mail.</a>
+    </div>
+</footer>
+</html>
