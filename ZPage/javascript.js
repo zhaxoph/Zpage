@@ -1,5 +1,6 @@
 window.onload = function(e){
 // get nav links
+var links = document.querySelectorAll("sidenav a"); 
 var links = document.querySelectorAll("nav a"); 
 
 // iterate through links and assign on click action
