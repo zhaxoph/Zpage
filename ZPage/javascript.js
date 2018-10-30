@@ -22,7 +22,40 @@ function onLinkClick(e){
   }
 }
 
+window.onscroll = function(e){
+  // Getting the nav offsetTop element
+  var d = document.getElementById("nav");
+  // Assigning the value of offsetTop
+  var topPos = d.offsetTop;  
 
+  var y = window.scroll;
+ //When the topnav is offsetTop, Sidenav will fade in
+ if (window.scrollY > 500){
+  document.getElementById("sidenav").classList.add("nav-active");   
+ } else{
+  document.getElementById("sidenav").classList.remove("nav-active");
+ } 
+};
+
+
+
+/*
+window.onscroll = function() {scrollAppear()};
+// Get the navbar
+var navbar = document.getElementById("sidenav");
+
+// Get the offset position of the navbar
+var sticky = navbar.addEventListener("scroll", scrollAppear);
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function scrollAppear() {
+  if (window.pageYOffset >= sticky) {
+    sidenav.classList.add("vis")
+  } else {
+    sidenav.classList.remove("vis");
+  }
+}
+*/
 /*
 var slideIndex = 1;
     showSlides(slideIndex);
