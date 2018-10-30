@@ -1,4 +1,5 @@
 window.onload = function(e){
+  console.log("welcome", document.getElementById("welcome"));
 // get nav links
 var links = document.querySelectorAll("sidenav a"); 
 var links = document.querySelectorAll("nav a"); 
@@ -28,11 +29,12 @@ window.onscroll = function(e){
   var d = document.getElementById("nav");
   // Assigning the value of offsetTop
   var topPos = d.offsetTop;  
-
+  var welcomePosition = document.getElementById("welcome").offsetHeight;
   var y = window.scroll;
  //When the topnav is offsetTop, Sidenav will fade in
- if (window.scrollY > 500){
+ if (window.scrollY > welcomePosition){
    console.log(window.location.hash);
+   
   document.getElementById("sidenav").classList.add("nav-active");   
  } else{
   document.getElementById("sidenav").classList.remove("nav-active");
