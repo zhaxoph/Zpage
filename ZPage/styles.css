@@ -59,6 +59,7 @@ header{
     margin-right: 1rem;
     display:none;
     opacity: 0;
+    scroll-behavior: auto;
    }
 
 .side-nav a{

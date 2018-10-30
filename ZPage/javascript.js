@@ -2,7 +2,8 @@ window.onload = function(e){
 // get nav links
 var links = document.querySelectorAll("sidenav a"); 
 var links = document.querySelectorAll("nav a"); 
-
+var hash = location.hash;
+var hash = location.hash.substr(1);
 // iterate through links and assign on click action
 links.forEach(function(link){
 link.addEventListener("click", onLinkClick); 
@@ -14,8 +15,8 @@ function onLinkClick(e){
 
   
   links.forEach(function(link){
-    if(link != e.target){
-      link.classList.remove("current");
+    if(link != e.target && window.location.hash){
+      link.classList.remove("current"); 
     }  
   });
   e.target.classList.add("current");
@@ -31,6 +32,7 @@ window.onscroll = function(e){
   var y = window.scroll;
  //When the topnav is offsetTop, Sidenav will fade in
  if (window.scrollY > 500){
+   console.log(window.location.hash);
   document.getElementById("sidenav").classList.add("nav-active");   
  } else{
   document.getElementById("sidenav").classList.remove("nav-active");
