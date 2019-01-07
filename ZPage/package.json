@@ -1,0 +1,25 @@
+{
+  "name": "zpage",
+  "version": "1.0.0",
+  "description": "ZhaxoPh webSite",
+  "main": "js",
+  "scripts": {
+    "test": "testo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhaxoph/Zpage.git"
+  },
+  "keywords": [
+    "Page"
+  ],
+  "author": "ZhaxoPh",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/zhaxoph/Zpage/issues"
+  },
+  "homepage": "https://github.com/zhaxoph/Zpage#readme",
+  "devDependencies": {
+    "cypress": "^3.1.4"
+  }
+}
